@@ -1,0 +1,321 @@
+
+@media screen and (min-width:1024px){
+
+
+main{
+    min-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+}
+
+a{
+    border:none;
+}
+
+button{border:none;
+}
+
+/* BARRA DE NAVEGACION */
+
+.navbar {
+    display:grid;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--primary-600);
+    color: var(--neutro-50);
+    position: fixed;
+    padding: 8px;
+    place-items: center;
+    place-content: center;
+    box-shadow: 8px 4px 5px #33333325;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  .toggle-icon {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    transition: transform 0.3s;
+  }
+  
+  .toggle-icon:before,
+  .toggle-icon:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    transition: transform 0.3s;
+  }
+  
+  .toggle-icon:before {
+    top: -8px;
+  }
+  
+  .toggle-icon:after {
+    top: 8px;
+  }
+  
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 8px;
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  .nav a {
+    width: 100%;
+    text-decoration: none;
+    color: var(--primary-50);
+    text-align: center;
+    border-radius: 8px;
+    transition: .5s;
+  }
+  .nav a:hover {
+    text-decoration: none;
+    color: var(--secondary-600);
+    text-align: center;
+    border-radius: 8px;
+    transition: .5s;
+  }
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr minmax(320px, 1fr);
+    border-bottom: 1px solid #ddd;
+    padding: 40px;
+    padding-top: 24px;
+    place-items: center;
+}
+
+.hero--img{
+    width: 66%;
+    margin: 0;
+    padding-top: 64px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px;
+}
+
+.info h1{
+    color: #333;
+    font-size: 5.6rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.info p{
+    color: #333;
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+}
+.info button a{
+    border: none;
+    width: 100%;
+    height: 32px;
+    border-radius: 8px;
+    color: var(--primary-50);
+    background-color: var(--primary-300);
+    font-weight: 600;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.info button a :hover{
+    border: none;
+    border-radius: 8px;
+    color: var(--primary-50);
+    background-color: var(--primary-600);
+    font-weight: 600;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.carta{
+    color: #333;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 100px 0 50px 0;
+    border-bottom: 1px solid #ddd;
+}
+.carta h2{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 56px;
+    color: rgb(42, 42, 42);
+}
+.carta--grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 8px;
+    place-content: center;
+}
+
+.carta--item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carta--item img{
+    margin: 0;
+}
+
+.carta--item__big{
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.menu{
+    margin-bottom: 160px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu h2{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    color: rgb(42, 42, 42);
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 100px 0 50px 0;
+}
+
+.menu--grid{
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 3fr));
+    margin-bottom: 100px;
+}
+
+.menu--item__big{
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.menu--grid--item{
+    margin: 0;
+    background-color: #ffc680ba;
+    padding: 20px;
+    border-top-left-radius: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+.menu--grid--item:hover{
+    margin: 0;
+    background-color: #ffc68045;
+    padding: 20px;
+    border-top-left-radius: 30px;
+    cursor: pointer;
+    box-shadow: 8px 8px 8px rgba(100,100,100,.085);
+    transition: .5s;
+}
+
+.menu--grid--item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+p{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+}
+strong{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+}
+
+/* TESTEO NUEVA GRILLA CELUS */
+
+.grilla{
+width: 100%;
+height: auto;
+margin-top: 64px;
+background-color: var(--primary-50);
+padding-top: 72px;
+padding-bottom: 64px;
+place-items: center;
+place-content: center;
+}
+
+.grilla h2{
+    color: rgb(128, 89, 35);
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 3.2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top:8px;
+}
+
+.grilla h3{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    color:var(--primary-600);
+}
+
+.grilla--padre{
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    min-width: 768px;
+    height: auto;
+    place-content: center;
+    gap:16px;
+    border-bottom: 1px solid #ddd;
+    }
+
+.grilla--producto{
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid rgba(216, 114, 19, 0.1);
+    padding: 8px;
+}
+
+.grilla--producto p{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.grilla--precio{
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid rgba(216, 114, 19, 0.1);
+    padding: 8px;
+}
+
+.grilla--precio p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: right;
+}
+
+
+footer{
+    background-color: var(--primary-600);
+    width: 100%;
+    height: 64px;
+    padding: 8px;
+}
+}
