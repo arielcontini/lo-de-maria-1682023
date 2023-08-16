@@ -157,6 +157,8 @@ main{
     justify-content: center;
     align-items: center;
     place-content: center;
+    padding-bottom:24px;
+    padding-top:24px;
 }
 
 .info{
@@ -164,21 +166,29 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8px;
+  padding-bottom:24px;
+  padding-top:24px;
 }
 
 .info h1{
     color:var(--primary-600);
-    font-size: 4rem;
+    font-size: 4.8rem;
     font-family: 'Dosis', sans-serif;
     font-weight: 600;
-    margin-bottom: 8px;
+    padding-bottom:24px;
+    padding-top:24px;
 }
 
 .info p{
+  display:grid;
+    place-items: center;
     color: var(--primary-600);
     font-size: 1.6rem;
-    margin-bottom: 16px;
+    text-align: center;
+    padding-bottom:24px;
+    padding-top:24px;
+    padding-left:16px;
+    padding-right:16px;
 }
 
 .info button a{
@@ -191,6 +201,8 @@ main{
     padding: 12px 24px;
     cursor: pointer;
     transition: .5s;
+    padding-bottom:8px;
+    padding-top:8px;
 }
 
 .info button a:hover{
