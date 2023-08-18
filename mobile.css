@@ -121,8 +121,7 @@ header{
       z-index: 1;
       transition: .5s;
       border-bottom: 1px solid rgba(216, 114, 19, 0.1);
-      padding-top:4px;
-      padding-bottom: 4px;
+      padding: 4px;
     }
     .nav a {
         border-bottom: 1px solid rgba(216, 114, 19, 0.1);
